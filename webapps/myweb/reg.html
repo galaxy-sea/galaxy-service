@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户注册</title>
+	</head>
+	<body>
+		<center>
+			<h1>用户注册</h1>
+			<!-- 
+				form表单
+				form表单是用来将用户输入的信息提交
+				给服务端的组件.所有被form表单包含的
+				input输入框内容都会被提交.
+				
+				form有两个重要的属性:
+				action:用于指定数据提交的服务端地址
+				method:用于指定该form表单的提交形式
+				
+				提交形式有两种:
+				get:地址栏形式提交,所有表单上的数据会
+				被拼接到action指定的路径之后,随地址栏
+				形式一起提交给服务端.
+				post:表单内容会被设置在请求的消息正文
+				部分提交给服务端.
+				
+				action常使用相对路径,这里相对的路径也是当前
+				页面所在的目录,如:
+				http://localhost:8080/myweb/reg.html
+				
+				那么action="reg"时,提交的路径为:
+				http://localhost:8080/myweb/reg
+			 -->
+			<form action="reg" method="post">
+				<table border="2">
+					<tr>
+						<td>用户名:</td>
+						<td><input type="text" size="32" name="username"></td>
+					</tr>
+					<tr>
+						<td>密码:</td>
+						<td><input type="password" size="32" name="password"></td>
+					</tr>
+					<tr>
+						<td>年龄:</td>
+						<td><input type="text" size="32" name="age"></td>
+					</tr>
+					<tr>
+						<td>手机号:</td>
+						<td><input type="text" size="32" name="tel"></td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center">
+							<input type="submit" value="注册">
+						</td>
+					</tr>
+				</table>
+			</form>
+			
+		</center>
+	</body>
+</html>
+
+
+
+
+

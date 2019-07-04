@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servlets>
+	<servlet url="/myweb/reg" class="kim.galaxy.webserver.servlet.RegServlet" />
+	<servlet url="/myweb/login" class="kim.galaxy.webserver.servlet.LoginServlet" />
+	<servlet url="/myweb/showAllUser" class="kim.galaxy.webserver.servlet.ShowAllUserServlet" />
+</servlets>
